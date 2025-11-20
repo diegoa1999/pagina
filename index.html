@@ -1,105 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ROEST Café — El Arte del Café</title>
-  <meta name="description" content="ROEST Café — café de especialidad en Cayambe. Tueste artesanal, aroma perfecto y experiencia única.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akiro Catering — Elian Almeida</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #111;
+        color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+        background: linear-gradient(#7a0c0c, #3b0303);
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .hero p {
+        margin-top: 5px;
+        letter-spacing: 3px;
+        color: #e6c1b3;
+        font-size: 16px;
+    }
+
+    /* PROFILE */
+    .profile {
+        text-align: center;
+        padding: 40px 20px;
+        background: #000;
+    }
+
+    .profile h2 {
+        font-size: 28px;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    .profile span {
+        color: #b30000;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .divider {
+        width: 80%;
+        height: 2px;
+        background: #b30000;
+        margin: 20px auto;
+    }
+
+    /* CONTACT BUTTONS */
+    .buttons {
+        max-width: 380px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 18px;
+        border-radius: 12px;
+        background: #1a1a1a;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border: 1px solid #333;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: #b30000;
+        border-color: #b30000;
+    }
+
+    .btn img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* LOCATION */
+    .location {
+        text-align: center;
+        padding: 40px 20px;
+        background: #111;
+    }
+
+    .location p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+    iframe {
+        width: 100%;
+        border: none;
+        border-radius: 12px;
+        height: 300px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #aaa;
+        background: #0d0d0d;
+    }
+</style>
+
 </head>
-
 <body>
-  <header>
-    <div class="logo">ROEST</div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#menu">Menú</a>
-      <a href="#ordenar">Ordenar</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
 
-  <!-- HERO PROFESIONAL CON SLIDER -->
-  <section class="hero" id="inicio">
-    <div class="slider">
-      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80');"></div>
-      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?auto=format&fit=crop&w=1600&q=80');"></div>
-      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=1600&q=80');"></div>
-    </div>
+<!-- HERO SECTION -->
+<div class="hero">
+    <img src="TU_LOGO_AQUI.png" alt="Logo Akiro">
+    <h1>Akiro Catering</h1>
+    <p>EXPERIENCIA • CALIDAD • ELEGANCIA</p>
+</div>
 
-    <div class="hero-content">
-      <h1>El arte del café</h1>
-      <p>Donde la pasión, el aroma y la perfección se encuentran en una taza.</p>
-      <a href="#menu" class="btn">Ver Menú</a>
-    </div>
-  </section>
+<!-- PROFILE SECTION -->
+<div class="profile">
+    <h2>ELIAN ALMEIDA</h2>
+    <span>PROPIETARIO</span>
+    <div class="divider"></div>
+</div>
 
-  <!-- SECCIÓN NOSOTROS -->
-  <section class="about" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>En <b>ROEST</b> transformamos cada grano en una experiencia.  
-    Inspirados en la cultura del café de especialidad, cuidamos cada detalle:  
-    desde el origen hasta el tueste artesanal, para que cada taza cuente una historia.</p>
-  </section>
+<!-- CONTACT BUTTONS -->
+<div class="buttons">
+    <a class="btn" href="https://wa.me/593983227361">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+        WhatsApp
+    </a>
 
-  <!-- SECCIÓN MENÚ -->
-  <section class="menu" id="menu">
-    <h2>Menú de Especialidad</h2>
-    <div class="menu-grid">
-      <div class="item"><h3>Espresso Doble</h3><p>$2.50</p></div>
-      <div class="item"><h3>Capuccino</h3><p>$3.20</p></div>
-      <div class="item"><h3>Latte Vainilla</h3><p>$3.50</p></div>
-      <div class="item"><h3>Cold Brew</h3><p>$4.00</p></div>
-      <div class="item"><h3>Flat White</h3><p>$3.80</p></div>
-      <div class="item"><h3>Mocha</h3><p>$4.20</p></div>
-    </div>
-  </section>
+    <a class="btn" href="tel:+593983227361">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
+        Llamar
+    </a>
 
-  <!-- 🔥 SECCIÓN GLORIAFOOD EMBEBIDA -->
-  <section class="order" id="ordenar">
-    <h2>Ordenar en línea</h2>
-    <p>Explora nuestro menú y realiza tu pedido directamente aquí.</p>
+    <a class="btn" href="https://instagram.com/akiro_catering">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        Instagram
+    </a>
 
-    <div class="order-box">
-      <iframe
-        src="https://www.foodbooking.com/api/fb/e31_ow"
-        width="100%"
-        height="750"
-        frameborder="0"
-        style="border-radius: 10px; box-shadow: 0 0 25px rgba(0,0,0,0.4);">
-      </iframe>
-    </div>
-  </section>
+    <a class="btn" href="https://maps.app.goo.gl/xxxxxx">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+        Ubicación
+    </a>
+</div>
 
-  <!-- GALERÍA -->
-  <section class="gallery" id="galeria">
-    <h2>Galería</h2>
-    <div class="gallery-grid">
-      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80" alt="Café 1">
-      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Café 2">
-      <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80" alt="Café 3">
-      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" alt="Café 4">
-    </div>
-  </section>
+<!-- LOCATION -->
+<div class="location">
+    <p>Cayambe, Pichincha — Ecuador</p>
 
-  <!-- FOOTER -->
-  <footer id="contacto">
-    <p>📍 Cayambe, Ecuador | Abierto todos los días de 8:00 a 20:00</p>
-    <div class="social">
-      <a href="#" title="Instagram">📸</a>
-      <a href="#" title="Facebook">📘</a>
-      <a href="mailto:contacto@roest.ec" title="Correo">✉️</a>
-    </div>
-    <p>© 2025 ROEST Café — Todos los derechos reservados</p>
-  </footer>
+    <!-- Puedes poner tu mapa real -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
 
-  <!-- BOTÓN WHATSAPP -->
-  <a class="whatsapp" href="https://wa.me/593989303862?text=Hola%20ROEST!%20Quisiera%20hacer%20un%20pedido." target="_blank">💬</a>
+<!-- FOOTER -->
+<footer>
+    © 2025 Akiro Catering — Todos los derechos reservados.
+</footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
+
+
